@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NetLab 3D</title>
+  <script type="module" crossorigin src="/netlab-web-demo/assets/index-C_nSa2PH.js"></script>
+  <link rel="modulepreload" crossorigin href="/netlab-web-demo/assets/three-CY8ViByn.js">
+  <link rel="stylesheet" crossorigin href="/netlab-web-demo/assets/index-BNkH8h_K.css">
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div id="hud-missions"></div>
+      <span id="stats">0 dispositivo(s) · 0 ligação(ões)</span>
+      <div id="actions">
+        <button id="btn-undo" data-i18n="top.undo" disabled>Desfazer</button>
+        <button id="btn-redo" data-i18n="top.redo" disabled>Refazer</button>
+        <button id="btn-top" data-i18n="top.top">Topo</button>
+        <button id="btn-front" data-i18n="top.front">Frente</button>
+        <button id="btn-packets" data-i18n="top.packet" aria-expanded="false">Pacotes</button>
+        <button id="btn-reset" data-i18n="top.reset">Reset</button>
+        <button id="btn-grid" data-i18n="top.grid">Grelha</button>
+        <button id="btn-clear" data-i18n="top.clear">Limpar</button>
+        <span id="settings-slot"></span>
+        <span id="manual-slot"></span>
+      </div>
+    </header>
+    <aside id="catalog">
+      <h3>Catálogo</h3>
+      <p class="muted">Seleciona um equipamento para o adicionar à cena.</p>
+      <div id="catalog-items"></div>
+    </aside>
+    <aside id="inspector">
+      <h3 data-i18n="inspector.title">Inspector</h3>
+      <div id="inspector-content">
+        <p class="muted">Seleciona um dispositivo na cena para ver as portas.</p>
+      </div>
+    </aside>
+    <footer id="terminal" data-i18n-aria-label="app.terminal" aria-label="Terminal de rede"></footer>
+    <canvas id="scene"></canvas>
+    <section id="packet-panel" class="packet-panel" data-i18n-aria-label="packet.title" aria-label="Modo pacotes" hidden></section>
+    <div id="toast"></div>
+    <div id="modal" class="hidden"></div>
+  </div>
+</body>
+</html>
